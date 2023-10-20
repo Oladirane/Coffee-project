@@ -304,16 +304,74 @@ footer p {
   }
 
   .headtext h1 {
-    line-height: 40px;
-    max-width: 70%;
+    line-height: 60px;
+    max-width: 75%;
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 50px;
+    font-size: 60px;
+    margin-bottom: 40px;
   }
 
   .headtext p {
-    max-width: 70%;
+    max-width: 75%;
     font-size: 15px;
     text-align: center;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .about img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .abouttext h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-top: 20px;
+  }
+
+  .abouttext h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .abouttext p {
+    text-align: center;
+  }
+
+  .testi {
+    flex-direction: column;
+    margin: 50px;
+  }
+
+  .reviews {
+    text-align: center;
+  }
+
+  .contact {
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .mailly,
+  .num {
+    justify-content: center;
+  }
+
+  .details p {
+    font-size: 20px;
+  }
+
+  .sitemap li a {
+    color: white;
+    font-size: 25px;
   }
 }
