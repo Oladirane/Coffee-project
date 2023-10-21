@@ -9,7 +9,7 @@ hamb.addEventListener("click", () => {
 
 emmy.forEach((ee) =>
   ee.addEventListener("click", () => {
-    lola.classList.toggle("active");
-    hamb.classList.toggle("active");
+    lola.classList.remove("active");
+    hamb.classList.remove("active");
   })
 );
