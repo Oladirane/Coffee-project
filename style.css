@@ -5,6 +5,10 @@ body {
   color: white;
 }
 
+.mobnav {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +19,7 @@ header {
   background-size: cover;
 }
 
-header ul {
+.navbar ul {
   display: flex;
   list-style: none;
   align-items: center;
@@ -27,7 +31,7 @@ header ul {
   margin-left: 50px;
 }
 
-header li a {
+.navbar li a {
   color: white;
   text-decoration: none;
   font-family: "Inter", sans-serif;
@@ -298,21 +302,92 @@ footer p {
     display: none;
   }
 
+  .mobile {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .lola {
+    list-style: none;
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background-color: #2f1f14;
+    width: 30%;
+    height: 40%;
+    border-radius: 25px 0 0 25px;
+    justify-content: center;
+    transition: all 0.5s;
+  }
+
+  .lola.active {
+    right: 0px;
+  }
+
+  .hamb.active .hamburger:nth-child(2) {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  .hamb.active .hamburger:nth-child(1) {
+    transform: translateY(8px) rotate(-45deg);
+  }
+
+  .hamb.active .hamburger:nth-child(3) {
+    transform: translateY(-8px) rotate(45deg);
+  }
+
+  .hamb {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .hamb .hamburger {
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    transition: all 0.5s;
+  }
+
+  .lola li a {
+    text-decoration: none;
+    color: white;
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .mobile img {
+    height: 100px;
+  }
+
+  .mobnav {
+    display: block;
+  }
+
   .headtext {
-    padding: 60px;
+    padding: 60px 60px;
     margin-left: 0;
   }
 
   .headtext h1 {
     line-height: 60px;
-    max-width: 75%;
+    /* max-width: 75%; */
     text-align: center;
     font-size: 60px;
     margin-bottom: 40px;
   }
 
   .headtext p {
-    max-width: 75%;
+    /* max-width: 75%; */
     font-size: 15px;
     text-align: center;
   }
