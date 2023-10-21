@@ -332,15 +332,15 @@ footer p {
 
   .hamb.active .hamburger:nth-child(2) {
     opacity: 0;
-    transition: all 0.2s;
+    transition: all 0.5s;
   }
 
   .hamb.active .hamburger:nth-child(1) {
-    transform: translateY(8px) rotate(-45deg);
+    transform: translateY(7px) rotate(-45deg);
   }
 
   .hamb.active .hamburger:nth-child(3) {
-    transform: translateY(-8px) rotate(45deg);
+    transform: translateY(-9px) rotate(45deg);
   }
 
   .hamb {
@@ -352,9 +352,9 @@ footer p {
 
   .hamb .hamburger {
     background-color: white;
-    width: 25px;
+    width: 30px;
     height: 3px;
-    transition: all 0.2s;
+    transition: all 0.5s;
   }
 
   .lola li a {
